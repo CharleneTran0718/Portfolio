@@ -84,3 +84,27 @@ anime.timeline({loop: false})
         delay: 4.5,
         stagger: 0.25
     })
+
+
+// // Assuming you have an element with the class "loader-content"
+// const loaderContent = document.querySelector('.loader-content');
+
+// // Add the "done" class when the loading is done
+// loaderContent.classList.add('done');
+
+// // Add the "loaded" class to the logo when the loading is done
+// const logo = document.querySelector('.site-content nav .logo img');
+// logo.classList.add('loaded');
+
+
+//         // Add this script to your HTML
+//         document.addEventListener("DOMContentLoaded", function () {
+//             var loaderContent = document.querySelector(".pre-loader");
+//             var siteContent = document.querySelector(".site-content");
+
+//             // Simulating the loader completion, you should replace this with your actual loader completion logic
+//             setTimeout(function () {
+//                 loaderContent.classList.add("done");
+//                 siteContent.classList.add("show-logo"); // Add a class to show the logo
+//             }, 3000); // Adjust the timeout according to your loader duration
+//         });
