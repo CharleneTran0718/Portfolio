@@ -163,7 +163,7 @@ html, body{
     height: auto; 
     border-radius: 3px;
     position: absolute;
-    top: 6%;
+    top: 5.7%;
     left: 6%;
     transform: translate(-50%, -50%);
     filter: drop-shadow(0 0 15px rgba(255, 71, 101, 0.8));
