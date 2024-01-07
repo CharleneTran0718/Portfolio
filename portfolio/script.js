@@ -84,4 +84,3 @@ anime.timeline({loop: false})
         delay: 4.5,
         stagger: 0.25
     })
-
