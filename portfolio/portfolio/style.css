@@ -18,6 +18,9 @@ html, body{
 
 body {
     background-color: #ffecec;
+    background-image: radial-gradient(rgb(190, 190, 190) 1px, transparent 0);
+    background-size: 40px 40px;
+    background-position: -19px -19px;
 }
 
 .pre-loader{
@@ -95,9 +98,11 @@ body {
       transform: translateY(0);
     }
     50% {
-      transform: translateY(-5px); /* Adjust the value for the desired vertical movement */
+      transform: translateY(-5px);
     }
   }  
+
+
   
 .load {
     display: block;
@@ -275,7 +280,7 @@ nav > div {
 
 .header {
     display: flex;
-    padding: 16em;
+    padding: 18em;
     position: relative; /* Add relative positioning to create a stacking context */
     align-items: center;
     justify-content: center;
@@ -285,25 +290,27 @@ nav > div {
     background-color: #fff;
     box-shadow: 14px 14px 18px rgba(0, 0, 0, 0.1); /* Add box-shadow for the shadow effect, only on bottom and right sides */
 
-    /* Add the following styles to create a circular element */
+
+
     &::before {
         content: '';
         position: absolute;
-        top: 25%;
-        left: 20%;
-        transform: translate(50%, -50%) rotate(90deg);
-        width: 12vw; /* Adjust the size of the circle relative to viewport width */
-        height: 12vw; /* Adjust the size of the circle relative to viewport width */
+        top: 50%;
+        left: 85%;
+        transform: translate(100%, -50%) rotate(90deg);
+        width: 8vw; 
+        height: 2vw; 
         /* background: conic-gradient(
             transparent 0deg 180deg,  
             #ff718b 180deg 360deg     
         ); */
-        background: url('images/half.png') center/cover;
-        /* background-color: #ff718b; */
+        margin-right: 60px;
+        background: url('images/ctLight.png') center/cover;
+        /* background-color: #ff718b;
         animation: sunGlow 5s linear infinite;
-        
-        border-radius: 50%; /* Make it a circle */
-        z-index: -3; /* Ensure it's behind the header content */
+         */
+        /* border-radius: 50%;  */
+        z-index: -3; 
     }
 
     &::after {
@@ -312,24 +319,55 @@ nav > div {
         top: 42.5%;
         left: 50%;
         transform: translate(95%, -50%);
-        width: 15%; /* Adjust the width of the rectangle */
-        height: 85%; /* Adjust the height of the rectangle */
-        background: url('images/shop.jpg') center/cover; /* Use the image as the background */
-        z-index: -3; /* Ensure it's behind the header content */
+        width: 15%; 
+        height: 85%; 
+        background: url('images/shop.jpg') center/cover; 
+        z-index: -3; 
         filter: brightness(1.2) saturate(70%);
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); 
+        animation: bannerOpen 5s ease-in-out forwards;
 
     }
 }
 
-@keyframes sunGlow {
+
+@keyframes bannerOpen {
+    0% {
+        transform: translate(95%, -50%) scaleY(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(95%, -50%) scaleY(1);
+        opacity: 1;
+    }
+}
+
+
+.header .shop{
+    content: '';
+    position: absolute;
+    top: 42.5%;
+    left: 50%;
+    transform: translate(95%, -50%);
+    width: 15%; /* Adjust the width of the rectangle */
+    height: 85%; /* Adjust the height of the rectangle */
+    background: url('images/shop.jpg') center/cover; /* Use the image as the background */
+    z-index: -3; /* Ensure it's behind the header content */
+    filter: brightness(1.2) saturate(70%);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+    animation: bannerOpen 5s ease-in-out forwards;
+
+}
+
+
+/* @keyframes sunGlow {
     0%, 100% {
         box-shadow: 0 0 20px 10px #ff7d7d;
     }
     50% {
         box-shadow: 0 0 40px 20px rgb(255, 102, 130);
     }
-}
+} */
 
 .header h1 {
     flex: 1;
@@ -337,80 +375,143 @@ nav > div {
     font-size: 3vw;
     /* font-weight: bold;  */
     color: #99243f; 
+    left: 90px;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-transform: uppercase;
+    line-height: 1.5;
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    letter-spacing: 30px; /* Adjust the spacing between words */
+    /* margin-left: 50px;  */
+    margin-right: 200px;
+    padding-bottom: 15px;
+    top: 80px;
+    border-bottom: 3px solid #99243f; /* Red line under the h1 */
+    width: 7%; /* Adjust the width to make the border shorter */
+
+    &::after {
+        content: ''; /* Add content to the pseudo-element */
+        position: absolute;
+        bottom: 6px;
+        left: 0;
+        width: 50%; /* Adjust the width of the second line */
+        height: 3px; /* Set the height of the second line */
+        background-color: #99243f; /* Set the color of the second line */
+        width: 150%;
+    }
+
+}
+
+
+.header a {
+    flex: 1;
+    position: absolute;
+    font-size: 1.3vw;
+    color: #99243fb9; 
     left: 0px;
     font-family: 'Noto Sans JP', sans-serif;
     text-transform: uppercase;
     line-height: 1.5;
-    text-align: center;
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    letter-spacing: 20px; /* Adjust the spacing between words */
+    margin-left: 90px; 
+    margin-right: 500px;
+    padding-bottom: 10px;
+    top: 270px;
+    z-index: -3;
+}
+
+
+.custom-typing .wrap {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+  }
+  
+  @keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+
+.line{
+    content: '';
+    position: absolute;
+    top: 93%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    width: .2vw; 
+    height: 10vw; 
+    z-index: -3; 
+    background-color: #efa0ad;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+
+}
+
+.btn {
+    --color: #99243f;
+    position: relative;
+    display: flex;
     justify-content: center;
     align-items: center;
-    letter-spacing: 30px; /* Adjust the spacing between words */
-    margin-left: 40px; 
-    margin-right: 150px;
-    white-space: nowrap; /* Prevent text from breaking onto a new line */
-
-
-}
-
-/* footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    padding: 2em;
+    transition: all .5s;
+    border: none;
+    background-color: transparent;
     z-index: -2;
-}
-
-
-footer > div{
-    flex: 1;
-}
-
-.footer-copy p{
-    width: 50%;
-}
-
-.footer-nav{
-    display: flex;
-    gap: 2em;
-    justify-content: flex-end;
-}
-
-.img {
-    width: 225px;
-    height: 150px;
-    clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
-}
-
-.img:nth-child(1){
-    background: url(./images/nav2.jpg) no-repeat 50% 50%;
-    background-size: cover;
-}
-
-.img:nth-child(2){
-    background: url(./images/nav1.jpg) no-repeat 50% 50%;
-    background-size: cover;
-}
-
-
-.img:nth-child(1):hover,
-.img:nth-child(2):hover {
-    transform: rotate(360deg);
-    transition: transform 0.5s ease;
-}
-
-@media(max-width: 900px){
-    footer{
-        flex-direction: column;
-        gap: 2em;
-    }
-    .footer-copy p{
-        width: 100%;
-    }
-    .footer-nav{
-        width: 100%;
-        justify-content: space-between;
-    }
-} */
-
+    top: 130px; /* Adjust the margin-top to move the button down */
+    left: -300px;
+    margin-left: 150px;
+  }
+  
+  .btn div {
+    letter-spacing: 2px;
+    font-weight: bold;
+    background: var(--color);
+    border-radius: 2rem;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .btn::before {
+    content: '';
+    z-index: -1;
+    background-color: var(--color);
+    border: 2px solid white;
+    border-radius: 2rem;
+    width: 110%;
+    height: 100%;
+    position: absolute;
+    transform: rotate(10deg);
+    transition: .5s;
+    opacity: 0.2;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+    transform: scale(1.1);
+  }
+  
+  .btn:hover::before {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  
+  .btn svg {
+    transform: translateX(-200%);
+    transition: .5s;
+    width: 0;
+    opacity: 0;
+  }
+  
+  .btn:hover svg {
+    width: 25px;
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  
+  .btn:active {
+    filter: brightness(1.4);
+  }

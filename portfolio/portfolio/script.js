@@ -77,6 +77,20 @@ anime.timeline({loop: false})
         delay: 3.75, 
         stagger: 0.05
     })
+    gsap.from(".header a" , {
+        y: 200,
+        ease: "power4.inOut", 
+        duration: 1.5,
+        delay: 3.75, 
+        stagger: 0.05
+    })
+    // gsap.from(".header .shop" , {
+    //     y: 200,
+    //     ease: "power4.inOut", 
+    //     duration: 1.5,
+    //     delay: 4.0, 
+    //     stagger: 0.05
+    // })
     gsap.to(".img", {
         clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
         ease: "power4.inOut",
@@ -86,25 +100,63 @@ anime.timeline({loop: false})
     })
 
 
-// // Assuming you have an element with the class "loader-content"
-// const loaderContent = document.querySelector('.loader-content');
+    setTimeout(function() {
+        document.querySelector('.header a').classList.add('fade-in');
+    }, 5000);
 
-// // Add the "done" class when the loading is done
-// loaderContent.classList.add('done');
+    var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
 
-// // Add the "loaded" class to the logo when the loading is done
-// const logo = document.querySelector('.site-content nav .logo img');
-// logo.classList.add('loaded');
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
 
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
 
-//         // Add this script to your HTML
-//         document.addEventListener("DOMContentLoaded", function () {
-//             var loaderContent = document.querySelector(".pre-loader");
-//             var siteContent = document.querySelector(".site-content");
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
-//             // Simulating the loader completion, you should replace this with your actual loader completion logic
-//             setTimeout(function () {
-//                 loaderContent.classList.add("done");
-//                 siteContent.classList.add("show-logo"); // Add a class to show the logo
-//             }, 3000); // Adjust the timeout according to your loader duration
-//         });
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('custom-typing');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #efa0ad}";
+        document.body.appendChild(css);
+    };
