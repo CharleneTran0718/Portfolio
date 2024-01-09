@@ -14,6 +14,7 @@ html, body{
     width: 100vw;
     height: 100vh;
     font-family: "Neue Montreal";
+    overflow: hidden;
 }
 
 body {
@@ -226,6 +227,7 @@ nav > div {
 
 .site-content nav .links {
     margin-top: 12px;
+    margin-right: 50px;
 }
 
 .links{
@@ -259,6 +261,7 @@ nav > div {
     transform: translateY(-3px); /* Adjust the value to control the vertical lift */
     transition: transform 0.3s ease; /* Add a smooth transition effect */
 }
+
 
 /*
 .header h1{
@@ -432,7 +435,6 @@ nav > div {
     }
   }
 
-
 .line{
     content: '';
     position: absolute;
@@ -456,14 +458,14 @@ nav > div {
     background-color: transparent;
     bottom: 13vw;
     margin-left: 25vw;
-    opacity: 0; /* Set initial opacity to 0 */
-    animation: fadeIn 1s ease-in-out 5s forwards; /* Animation for fading in after 5 seconds */
+    opacity: 0;  
+    animation: fadeIn 1s ease-in-out 5s forwards; 
 }
 
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: scale(0.8); /* Optional: start from a smaller size */
+        transform: scale(0.8); 
     }
     to {
         opacity: 1;
