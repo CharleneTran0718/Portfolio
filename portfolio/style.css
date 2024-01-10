@@ -164,10 +164,11 @@ body {
 
 .site-content .navbar{
     /* position: relative; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
+    /* justify-content: space-between;
+    align-items: center; */
     z-index: -2; 
     background-color: rgba(227, 227, 227, 0.355);
+    /* text-decoration: none; */
 }
 
 /* .site-content {
@@ -178,6 +179,7 @@ body {
     margin-left: 30px; /* Adjust the margin to move the logo more to the right */
     margin-top: -6px;
     margin-bottom: -6px;
+    /* align-items: center; */
 }
 
 .site-content nav .logo img {
@@ -226,7 +228,7 @@ nav > div {
 
 
 .site-content nav .links {
-    margin-top: 12px;
+    margin-top: 13px;
     margin-right: 50px;
 }
 
@@ -263,19 +265,74 @@ nav > div {
 }
 
 
-/*
-.header h1{
-    flex: 1;
-    position: relative;
-    font-size: 7vw;
-    font-family: "PP Editorial Old";
-    font-weight: 500;
-    text-transform: uppercase;
-    line-height: 0.5;
-    text-align: center;
-    justify-content: center;
+
+/* navbar mobile stuff */
+
+#hamburger-icon{
+    margin: 18px;
+    display: none;
+    cursor: pointer;
+}
+
+
+#hamburger-icon div{
+    width: 35px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+
+.open .bar1{
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2{
+    opacity: 0;
+}
+
+.open .bar3{
+    -webkit-transform: rotate(45deg) translate(-6px, -6px);
+    transform: rotate(45deg) translate(-6px, -6px);
+}
+
+.open .mobile-menu{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-} */
+    justify-content: flex-start;
+}
+
+.mobile-menu{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 110px;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+
+.mobile-menu li{
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    .navbar .links {
+        display: none;
+    }
+    #hamburger-icon{
+        display: block;
+        position: absolute;
+        right: 5px; /* Adjust the right spacing as needed */
+        top: 2.5px; /* Adjust the top spacing as needed */
+
+    }
+}
+
+
 
 .header {
     display: flex;
