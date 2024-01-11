@@ -292,7 +292,7 @@ ul {
     align-items: center;
     justify-content: space-around;
     text-transform: uppercase;
-    /* color: rgb(0, 0, 0); */
+    color: rgb(0, 0, 0);
 }
   
   /* ul a {
@@ -309,14 +309,14 @@ ul {
     font-size: 15px;
     transition: height 0.3s ease, opacity 0.3s ease;
     bottom: 0;
-    /* color: rgb(0, 0, 0); */
+    color: rgb(0, 0, 0);
   }
   
-ul:hover {
-    color: #efa0ad; /* Light pink color */
+li:hover {
+    color: #efa0ad; 
     filter: drop-shadow(0 0 80px rgba(255, 192, 203, 0.8));
-    transform: translateY(-3px); /* Adjust the value to control the vertical lift */
-    transition: transform 0.3s ease; /* Add a smooth transition effect */
+    transform: translateY(-3px); 
+    transition: transform 0.3s ease;
 }
 
 .open .bar1{
@@ -333,6 +333,8 @@ ul:hover {
     transform: rotate(45deg) translate(-6px, -7px);
 }
 
+
+
 /* #hamburger-icon {
     margin: auto 0;
     display: none;
@@ -346,6 +348,8 @@ ul:hover {
     margin: 6px 0;
     transition: 0.4s;
   } */
+
+
 
 .open .mobile-menu{
     display: flex;
