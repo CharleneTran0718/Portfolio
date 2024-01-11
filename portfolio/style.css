@@ -266,6 +266,7 @@ nav > div {
 
 
 
+
 /* navbar mobile stuff */
 
 #hamburger-icon{
@@ -284,6 +285,39 @@ nav > div {
     border-radius: 5px;
 }
 
+ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+    /* color: rgb(0, 0, 0); */
+}
+  
+  /* ul a {
+    color: rgb(0, 0, 0);
+  } */
+  
+  li {
+    padding: 5px;
+    margin-left: 0px;
+    content: '';
+    /* position: relative; */
+    width: 100%;
+    height: 0;
+    font-size: 15px;
+    transition: height 0.3s ease, opacity 0.3s ease;
+    bottom: 0;
+    /* color: rgb(0, 0, 0); */
+  }
+  
+ul:hover {
+    color: #efa0ad; /* Light pink color */
+    filter: drop-shadow(0 0 80px rgba(255, 192, 203, 0.8));
+    transform: translateY(-3px); /* Adjust the value to control the vertical lift */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
 
 .open .bar1{
     -webkit-transform: rotate(-45deg) translate(-6px, 6px);
@@ -295,22 +329,37 @@ nav > div {
 }
 
 .open .bar3{
-    -webkit-transform: rotate(45deg) translate(-6px, -6px);
-    transform: rotate(45deg) translate(-6px, -6px);
+    -webkit-transform: rotate(45deg) translate(-6px, -7px);
+    transform: rotate(45deg) translate(-6px, -7px);
 }
+
+/* #hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin: 6px 0;
+    transition: 0.4s;
+  } */
 
 .open .mobile-menu{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    /* height: calc(100vh - 50px);  */
 }
 
 .mobile-menu{
     display: none;
     position: absolute;
     top: 50px;
-    left: 110px;
+    left: 0px;
     height: calc(100vh - 50px);
     width: 100%;
 }
@@ -328,7 +377,6 @@ nav > div {
         position: absolute;
         right: 5px; /* Adjust the right spacing as needed */
         top: 2.5px; /* Adjust the top spacing as needed */
-
     }
 }
 

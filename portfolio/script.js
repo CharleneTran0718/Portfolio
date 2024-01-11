@@ -160,3 +160,8 @@ anime.timeline({loop: false})
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #efa0ad}";
         document.body.appendChild(css);
     };
+
+//nav bar mobile
+    function toggleMobileMenu(menu){
+        menu.classList.toggle('open');
+    }
