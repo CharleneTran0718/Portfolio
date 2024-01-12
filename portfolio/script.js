@@ -165,3 +165,5 @@ anime.timeline({loop: false})
     function toggleMobileMenu(menu){
         menu.classList.toggle('open');
     }
+
+    
