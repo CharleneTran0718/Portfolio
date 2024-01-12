@@ -112,8 +112,10 @@ body {
     width: 33vw;
     height: auto;
     position: absolute;
-    top: -210%;
-    left: 40%;
+    /* top: -210%; */
+    top: -10vh;
+    /* left: 40%; */
+    left: 14vh;
     /* top: -190%;
     right: 0%;  */
     transform: translate(-50%, -50%);
