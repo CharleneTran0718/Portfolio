@@ -292,31 +292,40 @@ ul {
     align-items: center;
     justify-content: space-around;
     text-transform: uppercase;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
     color: rgb(0, 0, 0);
 }
-  
-  /* ul a {
-    color: rgb(0, 0, 0);
-  } */
-  
-  li {
-    padding: 5px;
-    margin-left: 0px;
-    content: '';
-    /* position: relative; */
-    width: 100%;
-    height: 0;
-    font-size: 15px;
-    transition: height 0.3s ease, opacity 0.3s ease;
-    bottom: 0;
+
+  ul a {
     color: rgb(0, 0, 0);
   }
   
-li:hover {
+  ul li {
+    padding: 7px;
+    margin-right: 80px;
+    content: '';
+    position: relative;
+    width: 100%;
+    height: 0;
+    font-size: 15px;
+    /* transition: height 0.3s ease, opacity 0.3s ease; */
+    transition: transform 0.3s ease; /* Add transition to the default state */
+    bottom: 0;
+    color: rgb(0, 0, 0);
+  }
+
+  ul a::before {
+    transition: height 0.3s ease, opacity 0.3s ease;
+}
+  
+ul a:hover {
     color: #efa0ad; 
-    filter: drop-shadow(0 0 80px rgba(255, 192, 203, 0.8));
+    filter: drop-shadow(0 0 80px rgba(50, 40, 42, 0.8));
     transform: translateY(-3px); 
     transition: transform 0.3s ease;
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .open .bar1{
