@@ -4,15 +4,15 @@ function startLoader(){
     let counterElement = document.querySelector(".count p");
     let currentValue = 0;
 
-    // function updateCounter(){
-    //     if (currentValue < 100){
-    //         let increment = Math.floor(Math.random() * 10) + 1;
-    //         currentValue = Math.min(currentValue + increment, 100);
-    //         counterElement.textContent = currentValue + '%';
+    function updateCounter(){
+        if (currentValue < 100){
+            let increment = Math.floor(Math.random() * 10) + 1;
+            currentValue = Math.min(currentValue + increment, 100);
+            counterElement.textContent = currentValue + '%';
 
-    //         let delay = Math.floor(Math.random() * 200) + 25;
-    //         setTimeout(updateCounter, delay);
-    //     }
+            let delay = Math.floor(Math.random() * 200) + 25;
+            setTimeout(updateCounter, delay);
+        }
     }
     updateCounter();
 }
@@ -161,9 +161,3 @@ anime.timeline({loop: false})
         document.body.appendChild(css);
     };
 
-//nav bar mobile
-    function toggleMobileMenu(menu){
-        menu.classList.toggle('open');
-    }
-
-    

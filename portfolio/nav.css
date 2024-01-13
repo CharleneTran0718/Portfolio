@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    font-family: "Neue Montreal";
+    overflow: hidden;
+}
+
+body {
+    background-color: #ffecec;
+    background-image: radial-gradient(rgb(190, 190, 190) 1px, transparent 0);
+    background-size: 40px 40px;
+    background-position: -19px -19px;
+}
+
+
+
+.site-content .navbar{
+    /* position: relative; */
+    /* justify-content: space-between;
+    align-items: center; */
+    z-index: -2; 
+    background-color: rgba(227, 227, 227, 0.355);
+    /* text-decoration: none; */
+}
+
+/* .site-content {
+    height: 60px; 
+} */
+
+.site-content nav .logo {
+    margin-left: 30px; /* Adjust the margin to move the logo more to the right */
+    margin-top: -6px;
+    margin-bottom: -6px;
+    /* align-items: center; */
+}
+
+.site-content nav .logo img {
+    width: 50px;
+    height: auto;
+    /* position: absolute; */
+    /* top: 3.5%;
+    left: 10%; */
+    /* position: absolute; */
+    transform: translate(0%, 0%); /* Center the logo both vertically and horizontally */
+    filter: drop-shadow(0 0 15px rgba(255, 71, 101, 0.8));
+    opacity: 1;
+    transition: transform 1.5s cubic-bezier(0.068, -0.055, 0.027, .155),
+                filter 0.5s cubic-bezier(0.00068, -0.00055, 0.00027, .00155);        
+}
+
+
+.site-content nav .logo img:hover {
+    transform: scale(1) translateX(1px) rotate(-10deg); 
+    filter: drop-shadow(0 0 80px rgba(241, 60, 90, 0.8));
+}
+
+nav{
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    text-transform: uppercase;
+    /* position: relative; */
+    z-index: -2;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+nav > div {
+    flex: 1;
+}
+
+
+.site-content nav .links {
+    margin-top: 13px;
+    margin-right: 50px;
+}
+
+.links{
+    display: flex;
+    justify-content: flex-end;
+    gap: 4em;
+} 
+
+.navbar .links a {
+    /* position: relative; */
+    overflow: hidden; /* Hide overflow for the pop-up effect */
+    color: #000;
+    transition: transform 0.3s ease; /* Add transition to the default state */
+    font-size: 15px; /* Set the default font size */
+    
+}
+
+.navbar .links a::before {
+    content: '';
+    /* position: relative; */
+    width: 100%;
+    height: 0;
+    font-size: 15px;
+    transition: height 0.3s ease, opacity 0.3s ease;
+    bottom: 0;
+}
+
+.navbar .links a:hover {
+    color: #efa0ad; /* Light pink color */
+    filter: drop-shadow(0 0 80px rgba(255, 192, 203, 0.8));
+    transform: translateY(-3px); /* Adjust the value to control the vertical lift */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+
+
+
+/* navbar mobile stuff */
+
+#hamburger-icon{
+    margin: 18px;
+    display: none;
+    cursor: pointer;
+}
+
+
+#hamburger-icon div{
+    width: 35px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+}
+
+  ul a {
+    color: rgb(0, 0, 0);
+  }
+  
+  ul li {
+    padding: 7px;
+    /* margin-right: 80px; */
+    content: '';
+    position: relative;
+    width: 100%;
+    height: 0;
+    font-size: 15px;
+    /* transition: height 0.3s ease, opacity 0.3s ease; */
+    transition: transform 0.3s ease; /* Add transition to the default state */
+    bottom: 0;
+    color: rgb(0, 0, 0);
+  }
+
+  /* ul a::before {
+    transition: height 0.3s ease, opacity 0.3s ease;
+} */
+  
+ul a:hover {
+    color: #efa0ad; 
+    filter: drop-shadow(0 0 80px rgba(50, 40, 42, 0.8));
+    /* transform: translateY(-3px); 
+    transition: transform 0.3s ease; */
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.open .bar1{
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2{
+    opacity: 0;
+}
+
+.open .bar3{
+    -webkit-transform: rotate(45deg) translate(-6px, -7px);
+    transform: rotate(45deg) translate(-6px, -7px);
+}
+
+
+
+/* #hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin: 6px 0;
+    transition: 0.4s;
+  } */
+
+
+
+.open .mobile-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* height: calc(100vh - 50px);  */
+}
+
+.mobile-menu{
+    /* display: none;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    height: calc(100vh - 50px);
+    width: 100%; */
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Adjust the width as needed */
+    max-width: 300px; /* Set a maximum width if desired */
+    background-color: rgba(255, 255, 255, 0.9); /* Background color with some transparency */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow for depth */
+    animation: fadeInMenu 0.5s ease; /* Add fade-in animation */
+}
+
+.mobile-menu li{
+    margin-bottom: 10px;
+    text-align: center; /* Center the text within each list item */
+
+}
+
+.mobile-menu a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px; /* Adjust the font size as needed */
+    display: block;
+    padding: 10px;
+    transition: color 0.3s ease; /* Add transition effect for color change */
+}
+
+.mobile-menu a:hover {
+    color: #efa0ad; /* Light pink color on hover */
+}
+
+
+@keyframes fadeInMenu {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .navbar .links {
+        display: none;
+    }
+    #hamburger-icon{
+        display: block;
+        position: absolute;
+        right: 5px; /* Adjust the right spacing as needed */
+        top: 2.5px; /* Adjust the top spacing as needed */
+    }
+}
