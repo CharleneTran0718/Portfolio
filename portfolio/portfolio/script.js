@@ -84,13 +84,6 @@ anime.timeline({loop: false})
         delay: 3.75, 
         stagger: 0.05
     })
-    // gsap.from(".header .shop" , {
-    //     y: 200,
-    //     ease: "power4.inOut", 
-    //     duration: 1.5,
-    //     delay: 4.0, 
-    //     stagger: 0.05
-    // })
     gsap.to(".img", {
         clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
         ease: "power4.inOut",
@@ -160,3 +153,4 @@ anime.timeline({loop: false})
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #efa0ad}";
         document.body.appendChild(css);
     };
+
