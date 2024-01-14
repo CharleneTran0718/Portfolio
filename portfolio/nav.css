@@ -15,7 +15,6 @@ body {
     background-color: #ffecec;
     background-image: radial-gradient(rgb(190, 190, 190) 1px, transparent 0);
     background-size: 40px 40px;
-    background-position: -19px -19px;
 }
 
 
@@ -230,8 +229,8 @@ ul a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%; /* Adjust the width as needed */
-    max-width: 300px; /* Set a maximum width if desired */
+    /* width: 50%;  */
+    /* max-width: 3px; */
     background-color: rgba(255, 255, 255, 0.9); /* Background color with some transparency */
     border-radius: 10px; /* Add border-radius for rounded corners */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow for depth */
@@ -278,3 +277,4 @@ ul a:hover {
         top: 2.5px; /* Adjust the top spacing as needed */
     }
 }
+
