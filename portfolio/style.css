@@ -101,7 +101,7 @@ body {
     .container .count {
         position: absolute;
         left: 50%; 
-        transform: translate(-50%, -55%);
+        transform: translate(-50%, -65%);
         z-index: 3;
         color: rgb(0, 0, 0);
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -199,12 +199,19 @@ body {
 }
 
 
+
+
+
+
 .site-content .navbar{
     /* position: relative; */
     /* justify-content: space-between;
     align-items: center; */
     z-index: -2; 
     background-color: rgba(227, 227, 227, 0.355);
+    top: 0;
+    left: 0;
+    right: 0;
     /* text-decoration: none; */
 }
 
@@ -325,9 +332,9 @@ nav > div {
 ul {
     list-style: none;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: space-around; */
     text-transform: uppercase;
     color: rgb(0, 0, 0);
 }
@@ -384,7 +391,9 @@ ul a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: calc(100vh - 50px); 
+    height: 18vh; 
+    animation: fadeInMenu 0.5s ease; 
+    /* height: 550px; */
 }
 
 .mobile-menu{
@@ -396,19 +405,32 @@ ul a:hover {
     z-index: 1;
     display: none;
     position: fixed;
-    top: 60%;
+    top: 20vh;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%; /* Adjust the width as needed */
-    max-width: 300px; /* Set a maximum width if desired */
-
+    width: 80%; 
     backdrop-filter: blur(10px); /* Apply the background blur effect */
+    /* flex-direction: column; */
+    min-height: 150px;
 
     /* background-position: -1px -1px; */
     border-radius: 10px; /* Add border-radius for rounded corners */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow for depth */
-    animation: fadeInMenu 0.5s ease; /* Add fade-in animation */
+    /* animation: slideDownMenu 0.5s ease;  */
+
 }
+
+@keyframes slideDownMenu {
+    from {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 .mobile-menu li{
     margin-bottom: 10px;
@@ -420,9 +442,14 @@ ul a:hover {
     color: #000;
     text-decoration: none;
     font-size: 18px; /* Adjust the font size as needed */
-    display: block;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
-    transition: color 0.3s ease, transform 0.3s ease; /* Add transition effect for color change and transform */    
+    transition: color 0.3s ease, transform 0.3s ease; 
+    animation: slideDownMenu 0.8s ease; 
+
 }
 
 .mobile-menu a:hover {
