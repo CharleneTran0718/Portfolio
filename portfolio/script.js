@@ -154,3 +154,8 @@ anime.timeline({loop: false})
         document.body.appendChild(css);
     };
 
+
+    function redirectToAbout() {
+        // Redirect to about.html
+        window.location.href = 'about.html';
+    }

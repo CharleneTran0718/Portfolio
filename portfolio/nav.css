@@ -50,7 +50,7 @@ body {
     /* position: absolute; */
     transform: translate(0%, 0%); /* Center the logo both vertically and horizontally */
     filter: drop-shadow(0 0 15px rgba(255, 71, 101, 0.8));
-    opacity: 0;
+    opacity: 1;
     transition: transform 1.5s cubic-bezier(0.068, -0.055, 0.027, .155),
                 filter 0.5s cubic-bezier(0.00068, -0.00055, 0.00027, .00155);            
 }

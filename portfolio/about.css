@@ -1,0 +1,50 @@
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    flex: 0.3;
+    padding: 50px;
+    position: relative;
+}
+
+.left img {
+    display: block;
+    margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+.left img:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+    padding: 3vw;
+}
+
+.right {
+    flex: 1;
+    padding: 20px; 
+}
+
+.title-content {
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+h2 {
+    color: #000000; 
+}
+
+li {
+    margin-bottom: 10px;
+}
