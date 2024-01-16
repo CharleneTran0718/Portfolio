@@ -637,6 +637,19 @@ ul a:hover {
     }
   }
 
+
+  @media (max-width: 600px) {
+    
+    .header a, h1{
+        writing-mode: vertical-lr; /* Vertical writing mode */
+        text-orientation: upright; /* Upright text orientation */
+        white-space: nowrap; /* Prevent line breaks */
+        margin-left: 0; /* Adjust as needed */
+        margin-right: 0; /* Adjust as needed */
+        padding-bottom: 0; /* Adjust as needed */
+    }
+}
+
 .line{
     content: '';
     position: absolute;

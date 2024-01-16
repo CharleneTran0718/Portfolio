@@ -8,7 +8,7 @@ html, body{
     width: 100vw;
     height: 100vh;
     font-family: "Neue Montreal";
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body {
@@ -211,7 +211,7 @@ ul a:hover {
     top: 50px;
     left: 0px;
     width: 100%; */
-    z-index: 1;
+    z-index: 999;
     display: none;
     position: fixed;
     top: 20vh;
@@ -258,7 +258,7 @@ ul a:hover {
     padding: 10px;
     transition: color 0.3s ease, transform 0.3s ease; 
     animation: slideDownMenu 0.8s ease; 
-
+    z-index: 3;
 }
 
 .mobile-menu a:hover {
@@ -284,9 +284,11 @@ ul a:hover {
     }
     #hamburger-icon{
         display: block;
-        position: absolute;
-        right: 5px; /* Adjust the right spacing as needed */
-        top: 2.5px; /* Adjust the top spacing as needed */
+        position: fixed;
+        right: 5px; 
+        top: 2.5px; 
+        z-index: 1000;
+
     }
 
 }
