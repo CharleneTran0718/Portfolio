@@ -305,11 +305,9 @@ ul a:hover {
     justify-content: center;
     z-index: -4;
     border-radius: 10px; 
-    margin: 27px 35px; /* Shorter left and right margins */
+    margin: 2em;
     background-color: #fff;
     box-shadow: 14px 14px 18px rgba(0, 0, 0, 0.1); /* Add box-shadow for the shadow effect, only on bottom and right sides */
-
-
 
     &::before {
         content: '';
@@ -317,19 +315,11 @@ ul a:hover {
         top: 50%;
         left: 85%;
         transform: translate(100%, -50%) rotate(90deg);
-        width: 8vw; 
-        height: 2vw; 
-        /* background: conic-gradient(
-            transparent 0deg 180deg,  
-            #ff718b 180deg 360deg     
-        ); */
-        margin-right: 60px;
+        width: 8vw;
+        height: 2vw;
+        margin-right: 4vw;
         background: url('images/ctLight.png') center/cover;
-        /* background-color: #ff718b;
-        animation: sunGlow 5s linear infinite;
-         */
-        /* border-radius: 50%;  */
-        z-index: -3; 
+        z-index: -3;
     }
 
     &::after {
@@ -477,9 +467,9 @@ ul a:hover {
     background-color: transparent;
     bottom: 13vw;
     margin-left: 25vw;
-    opacity: 0;  
+    opacity: 1;  
 }
-  
+
   .btn div {
     letter-spacing: 2px;
     font-weight: bold;
