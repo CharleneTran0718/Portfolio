@@ -43,7 +43,7 @@
 
 .left h1 {
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     color: #d08e99; 
     font-size: 44px; /* Adjust the font size as needed */
 
@@ -62,7 +62,7 @@
     /* align-items: center; */
     /* justify-content: flex-start; */
     border: 2px red solid;
-    height: 80vh;
+    height: 90vh;
     padding: 2vw;
 }
 
@@ -76,18 +76,18 @@
 
 .title-content h1{
     margin-bottom: 5vh;
+    margin-top: -2vh;
 }
 
 
 .title-content h1 {
     position: relative;
     display: inline-block;
-    color: #efa0ad; /* Light pink color */
-    background: linear-gradient(45deg, #efa0ad, #ff7d7d); /* Gradient background */
+    color: #000000; /* Light pink color */
     padding: 10px;
     border-radius: 10px;
     font-family: 'Noto Sans JP', sans-serif; /* Your cute font */
-    font-size: 24px; /* Adjust the font size as needed */
+    font-size: 45px; /* Adjust the font size as needed */
 }
 
 .title-content h1::before,
@@ -95,17 +95,20 @@
     content: '';
     position: absolute;
     left: 0;
-    width: 100%;
+    width: 70%;
     height: 2px; /* Height of the horizontal line */
-    background-color: #efa0ad; /* Color of the horizontal line */
+    background-color: #393939; /* Color of the horizontal line */
 }
 
 .title-content h1::before {
-    top: -5px; /* Adjust the distance above the title */
+    left: -70%; /* Adjust the distance above the title */
+    top: 50%;
 }
 
 .title-content h1::after {
-    bottom: -5px; /* Adjust the distance below the title */
+    left: 100%; /* Adjust the distance below the title */
+    top: 50%;
+
 }
 
 
