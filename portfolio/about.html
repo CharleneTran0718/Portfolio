@@ -156,30 +156,86 @@
                         </g>
                       </svg>
                     </div>
-                  </button>
+                </button>
                 <p>My name is Charlene Tran, a software engineer and web developer based in California. I'm currently a junior attending the California State University of Long Beach with a passion for coding. I consider myself an organized, detail-oriented, and reliable person who's willing to learn every step of the way!</p>
             </div>
             <div class="right">
                 <section class="title">
                     <div class="title-content">
-                        <h1>About Me</h1>
-                        <ul>
-                            <h2>Skills</h2>
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                        </ul>
-                        <ul>
-                            <h2>Education</h2>
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                            <li>Item 3</li>
-                        </ul>
-                    </div>
+                        <h1>About Me</h1></div>
+                               <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">
+                                  Skills
+                                </p>
+                                <p class="tab-links" onclick="opentab('experience')">
+                                  Experience
+                                </p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                                <!-- https://uiverse.io/Juanes200122/ordinary-dodo-95 -->
+                              </div>
+                              <div class="box active-tab" id="skills">
+                                <div class="skill-box">
+                                  <span class="title">Python</span>
+                  
+                                  <div class="skill-bar">
+                                    <span class="skill-per html">
+                                      <span class="tooltip">80%</span>
+                                    </span>
+                                  </div>
+                                </div>
+                  
+                                <div class="skill-box">
+                                  <span class="title">C++</span>
+                  
+                                  <div class="skill-bar">
+                                    <span class="skill-per css">
+                                      <span class="tooltip">30%</span>
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="skill-box">
+                                  <span class="title">JavaScript</span>
+                  
+                                  <div class="skill-bar">
+                                    <span class="skill-per javascript">
+                                      <span class="tooltip">50%</span>
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="skill-box">
+                                  <span class="title">HTML5/CSS3</span>
+                  
+                                  <div class="skill-bar">
+                                    <span class="skill-per nodejs">
+                                      <span class="tooltip">90%</span>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="box" id="experience">
+                                <ul>
+                                  <li><span>DubHacks - Hackaton</span><br />October of 2023</li>
+                                  <li>
+                                    <span>CSULB Programming Team</span><br />January - June of
+                                    2023
+                                  </li>
+                                  <li><span>UCLA - Hackaton</span><br />April of 2023</li>
+                                  <li><span>CSULB - Hackaton</span><br />February of 2023</li>
+                                </ul>
+                              </div>
+                              <div class="box" id="education">
+                                <ul>
+                                  <li>
+                                    <span>California State University, Long Beach</span><br />
+                                    August of 2021 - Current
+                                  </li>
+                                  <li><span>3.6/4.0</span><br />Cumulative GPA</li>
+                                </ul>
+                              </div>
+                    <!-- </div> -->
                 </section> 
             </div>
     </div>
-    
     <script src="about.js"></script>
     <script src="nav.js"></script>
 </body>
