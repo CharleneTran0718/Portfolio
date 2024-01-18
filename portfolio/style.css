@@ -140,7 +140,7 @@ body {
 
 
   
-  .load {
+.load {
     display: block;
     margin: 0 auto;
     width: 205px;
@@ -150,8 +150,8 @@ body {
     right: 0%;
     transform: translate(50%, -50%);
     animation: rotateImage 6s linear infinite;
-    z-index: 2; /* Set a higher z-index to ensure it overlaps with other elements */
-    filter: drop-shadow(0 0 20px rgba(255, 192, 203, 0.8)); /* Pink glow effect */
+    z-index: 2; 
+    filter: drop-shadow(0 0 20px rgba(255, 192, 203, 0.8)); 
 }
 
 .count {
@@ -165,7 +165,6 @@ body {
     font-family: 'Courier New', monospace; 
     font-weight: bold; 
     font-size: 14px;
-
 }
 
 
