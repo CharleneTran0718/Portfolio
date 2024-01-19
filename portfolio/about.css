@@ -1,5 +1,5 @@
 html, body{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .container {
@@ -10,7 +10,7 @@ html, body{
 
 .left {
     flex: 0.3;
-    padding: 3vw;
+    padding: 3px;
     position: relative;
     text-align: center;
     margin-left: 3vw;
@@ -257,27 +257,32 @@ button:hover .star-6 {
     margin-bottom: 0; /* Remove bottom margin */
     margin-top: -200px; /* Adjust the margin as needed */
     transform: translate(0%, -30%);
+
 }
 
 
 .right {
-    flex: 1;
+    flex: .65;
     display: flex;
     flex-direction: column;
     position: relative;
     /* align-items: center; */
     /* justify-content: flex-start; */
     border: 2px red solid;
-    height: 90vh;
-    padding: 2vw;
+    height: 80vh;
+    padding: 3vw;
     /* margin: 5vw; */
+
+    /* padding: 3px;
+    position: relative;
+    text-align: center;
+    margin-left: 3vw; */
 }
 
 .title-content {
-    max-width: 400px;
+    max-width: 300px;
     margin: 0 auto;
     text-align: center; 
-    border: 2px red solid;
     margin-top: -1vh;
 }
 
@@ -392,6 +397,8 @@ li {
   list-style: none;
   margin: 15px 0;
   font-family: 'Montserrat', sans-serif; 
+  display: flex;
+  align-items: center;
 
 }
 
@@ -416,6 +423,40 @@ li {
   user-select: none;
   margin: -40px 0;
 }
+
+
+
+/* education */
+
+
+.slogo {
+  width: 50px; /* Adjust the width of the image as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Adjust the margin as needed */
+  margin-top: 50px;
+  margin-left: -10px;
+}
+
+.text-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start (top) of the column */
+}
+
+.box ul li .school {
+  font-size: 15px; /* Adjust the size as needed */
+  font-weight: bold;
+  margin-top: 55px; /* Adjust the margin as needed */
+  margin-bottom: -13px;
+}
+
+.box ul li .year {
+  font-size: smaller; /* Adjust the size as needed */
+  color: rgb(66, 66, 66);
+  margin-top: 0px; 
+}
+
 
 
 
@@ -576,7 +617,3 @@ li {
   background: #000000;
 }
 
-
-/* .education span{
-  
-} */
