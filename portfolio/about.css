@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Mooli&family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Mooli&family=Rokkitt:ital,wght@0,100..900;1,100..900&family=Rubik+Doodle+Shadow&display=swap');
 
 html, body{
     overflow-x: hidden;
@@ -17,7 +16,7 @@ html, body{
     padding: 3px;
     position: relative;
     text-align: center;
-    margin-left: 3vw;
+    margin-left: 3vw;    
 }
 
 .left img {
@@ -256,12 +255,13 @@ button:hover .star-6 {
   
 
 .left p{
-    font-family: 'Montserrat', sans-serif; 
+  font-family: "Rokkitt", serif;
+  /* font-family: 'Montserrat', sans-serif;  */
     /* top: -500px; */
     margin-bottom: 0; /* Remove bottom margin */
-    margin-top: -200px; /* Adjust the margin as needed */
+    margin-top: -220px; /* Adjust the margin as needed */
     transform: translate(0%, -30%);
-
+    color: rgb(56, 56, 56);
 }
 
 
@@ -292,16 +292,16 @@ button:hover .star-6 {
 
 
 
-.title-content h1 {
+.title-content h1 {    /*about me*/
     position: relative;
     display: inline-block;
-    color: #000000; /* Light pink color */
+    color: #3d3d3d; /* Light pink color */
     padding: 10px;
     border-radius: 10px;
     margin-top: 0vh;
-    font-size: 50px;
-    font-family: 'Mooli', sans-serif;
-}
+    font-size: 40px;
+    font-family: "Rubik Doodle Shadow", system-ui;
+  }
 
 .title-content h1::before,
 .title-content h1::after {
@@ -311,7 +311,7 @@ button:hover .star-6 {
     right: 0;
     width: 15vw;
     height: 2px; /* Height of the horizontal line */
-    background-color: #393939; /* Color of the horizontal line */
+    background-color: #464646ec; /* Color of the horizontal line */
     display: block;
 }
 
@@ -365,7 +365,6 @@ li {
   display: flex;
   padding: 25px 0;
   font-family: 'Montserrat', sans-serif; 
-
 }
 
 .tab-links {
@@ -424,7 +423,21 @@ li {
 
 
 
-/* education */
+@media only screen and (max-width: 850px) {
+  .tab-titles {
+      flex-direction: column;
+      align-items: center; /* Optional: Center the tab links */
+  }
+
+  .tab-links {
+      margin-right: 0;
+      margin-bottom: 10px; /* Add margin between stacked tab links */
+  }
+}
+
+
+
+/* education & experience*/
 
 
 .slogo {
@@ -467,6 +480,7 @@ li {
   font-weight: bold;
   margin-top: 350px; /* Adjust the margin as needed */
   margin-bottom: -13px;
+  
 }
 
 .box ul li .clist {
@@ -474,31 +488,13 @@ li {
   color: rgb(66, 66, 66);
   margin-top: 0px; 
   line-height: 1.7;
-}
-
-
-
-/* experience */
-
-.box .hack {
-  font-size: 25px; /* Adjust the size as needed */
-  font-weight: bold;
-  margin-top: 350px; /* Adjust the margin as needed */
-  margin-bottom: -13px;
-}
-
-.box .month {
-  font-size: smaller; /* Adjust the size as needed */
-  color: rgb(66, 66, 66);
-  margin-top: 0px; 
-  line-height: 1.7;
+  text-transform: none; 
 }
 
 
 
 
-
-
+/* 
 .box .backend-box {
   width: 100%;
   margin: 25px 0;
@@ -572,6 +568,7 @@ li {
   border-radius: 3px;
   background: #000000;
 }
+ */
 
 
 
@@ -580,8 +577,7 @@ li {
 
 
 
-
-.box .frontend-box {
+/* .box .frontend-box {
   width: 100%;
   margin: 25px 0;
 }
@@ -654,4 +650,4 @@ li {
   border-radius: 3px;
   background: #000000;
 }
-
+ */

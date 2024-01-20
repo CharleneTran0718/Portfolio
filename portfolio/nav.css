@@ -83,6 +83,7 @@ nav > div {
 .site-content nav .links {
     margin-top: 13px;
     margin-right: 50px;
+    z-index: 10;
 }
 
 .links{
