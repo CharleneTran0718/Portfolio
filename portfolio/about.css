@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+
+
 html, body{
     overflow-x: hidden;
 }
@@ -287,12 +291,6 @@ button:hover .star-6 {
 }
 
 
-.title-content h1{
-    /* margin-bottom: 5vh; */
-    margin-top: 0vh;
-    font-size: 50px;
-}
-
 
 .title-content h1 {
     position: relative;
@@ -300,8 +298,9 @@ button:hover .star-6 {
     color: #000000; /* Light pink color */
     padding: 10px;
     border-radius: 10px;
-    font-family: 'Noto Sans JP', sans-serif; /* Your cute font */
-    font-size: 45px; /* Adjust the font size as needed */
+    margin-top: 0vh;
+    font-size: 50px;
+    font-family: 'Mooli', sans-serif;
 }
 
 .title-content h1::before,
@@ -364,7 +363,7 @@ li {
 
 .tab-titles {
   display: flex;
-  padding: 50px 0;
+  padding: 25px 0;
   font-family: 'Montserrat', sans-serif; 
 
 }
@@ -399,7 +398,6 @@ li {
   font-family: 'Montserrat', sans-serif; 
   display: flex;
   align-items: center;
-
 }
 
 .box ul li span {
@@ -433,7 +431,7 @@ li {
   width: 50px; /* Adjust the width of the image as needed */
   height: auto; /* Maintain aspect ratio */
   margin-right: 10px; /* Adjust the margin as needed */
-  margin-top: 50px;
+  margin-top: 100px;
   margin-left: -10px;
 }
 
@@ -447,7 +445,7 @@ li {
 .box ul li .school {
   font-size: 15px; /* Adjust the size as needed */
   font-weight: bold;
-  margin-top: 55px; /* Adjust the margin as needed */
+  margin-top: 100px; /* Adjust the margin as needed */
   margin-bottom: -13px;
 }
 
@@ -456,6 +454,46 @@ li {
   color: rgb(66, 66, 66);
   margin-top: 0px; 
 }
+
+.course-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start (top) of the column */
+}
+
+.box ul li .courses {
+  font-size: 15px; /* Adjust the size as needed */
+  font-weight: bold;
+  margin-top: 350px; /* Adjust the margin as needed */
+  margin-bottom: -13px;
+}
+
+.box ul li .clist {
+  font-size: smaller; /* Adjust the size as needed */
+  color: rgb(66, 66, 66);
+  margin-top: 0px; 
+  line-height: 1.7;
+}
+
+
+
+/* experience */
+
+.box .hack {
+  font-size: 25px; /* Adjust the size as needed */
+  font-weight: bold;
+  margin-top: 350px; /* Adjust the margin as needed */
+  margin-bottom: -13px;
+}
+
+.box .month {
+  font-size: smaller; /* Adjust the size as needed */
+  color: rgb(66, 66, 66);
+  margin-top: 0px; 
+  line-height: 1.7;
+}
+
 
 
 
