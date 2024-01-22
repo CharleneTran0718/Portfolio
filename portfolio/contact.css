@@ -20,6 +20,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
 .form {
@@ -62,7 +63,7 @@ textarea {
   right: 30px;
 }
 
-.contact-form:before {
+/* .contact-form:before {
   content: "";
   position: absolute;
   width: 26px;
@@ -72,7 +73,7 @@ textarea {
   top: 50px;
   left: -13px;
 }
-
+ */
 
 
 /* .contact-form:before {
@@ -264,6 +265,35 @@ textarea.input {
   display: flex;
   margin-top: 0.5rem;
 }
+
+
+.linkedin-icon img {
+    width: 20px; 
+    height: auto; 
+    margin-top: 20%;
+  }
+  
+  .github-icon img {
+    width: 26px; 
+    height: auto; 
+    margin-top: 12%;
+  }
+  
+  .instagram-icon img {
+    width: 25px; 
+    height: auto; 
+    margin-top: 15%;
+  }
+  
+  .social-icons a {
+    margin-right: 0.5rem;
+    transition: 0.3s;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.1);
+  }
+  
 
 .social-icons a {
   width: 35px;

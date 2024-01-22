@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Cutive+Mono&family=Mooli&family=Rokkitt:ital,wght@0,100..900;1,100..900&family=Rubik+Doodle+Shadow&display=swap');
 
 html, body{
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .container {
@@ -29,8 +29,6 @@ html, body{
     left: 50%;
     transform: translate(-50%, 0%);
     z-index: 1; 
-    /* padding: 1vw; */
-
 }
 
 @keyframes sunAnimation {
@@ -43,14 +41,11 @@ html, body{
     position: relative;
     left: 50%;
     transform: translate(-40%, -100%);
-    /* padding: 1vw; */
     animation: sunAnimation 4s infinite alternate;
     opacity: 50%;
-
 }
 
 @media only screen and (max-width: 600px) {
-    /* Adjust image size for smaller screens */
     .left img:first-child {
         max-width: 80%;
     }
@@ -66,9 +61,6 @@ button {
     padding: 20px 35px;
     background: #ffffff00;
     font-weight: 600;
-    /* color: #000000; */
-    /* box-shadow: 0px 0px 10px 0px rgb(255, 255, 255); */
-    /* border-radius: 100px; */
     border: none;
     transition: all 0.5s ease-in-out;
     cursor: pointer;
