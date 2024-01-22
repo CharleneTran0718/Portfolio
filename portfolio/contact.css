@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Comfortaa:wght@300..700&family=Cutive+Mono&family=Mooli&family=Rokkitt:ital,wght@0,100..900;1,100..900&family=Rubik+Doodle+Shadow&display=swap');
 html, body{
     overflow: hidden;
 }
@@ -8,7 +7,7 @@ html, body{
 body,
 input,
 textarea {
-  font-family: "Poppins", sans-serif;
+    font-family: "Bellefair", serif;
 }
 
 .container {
@@ -280,9 +279,9 @@ textarea.input {
   }
   
   .instagram-icon img {
-    width: 25px; 
+    width: 23px; 
     height: auto; 
-    margin-top: 15%;
+    margin-top: 16%;
   }
   
   .social-icons a {
