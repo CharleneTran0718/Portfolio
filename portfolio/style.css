@@ -21,7 +21,6 @@ body {
     background-color: #ffecec;
     background-image: radial-gradient(rgb(190, 190, 190) 1px, transparent 0);
     background-size: 40px 40px;
-    /* background-position: -19px -19px; */
 }
 
 .pre-loader{
@@ -41,7 +40,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 10;
 }
 
 .loader-content{
@@ -69,8 +68,6 @@ body {
 
 .text {
     overflow: hidden;
-    /* top: 30%;
-    right: 10%; */
     transform: translate(-25%, -50%);
     transition: right 0.5s ease;
     z-index: 2; 
@@ -675,7 +672,7 @@ ul a:hover {
     bottom: 13vw;
     margin-left: 25vw;
     opacity: 0;  
-    animation: fadeIn 1s ease-in-out 5s forwards; 
+    animation: fadeIn 1s ease-in-out 6s forwards; 
     z-index: 1;
 }
 
