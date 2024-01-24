@@ -25,11 +25,13 @@ html, body{
 }
 
 .left img:first-child {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    z-index: 1; 
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 1; 
+  animation: zoomin 1s ease-in-out;
 }
+
 
 @keyframes sunAnimation {
     0% { filter: drop-shadow(0 0 30px rgba(255, 0, 0, 0.871)) blur(5px); }
@@ -43,7 +45,19 @@ html, body{
     transform: translate(-40%, -100%);
     animation: sunAnimation 4s infinite alternate;
     opacity: 50%;
-}
+  }
+
+
+  @keyframes zoomin {
+    0%, 100% {
+        transform: translate(-50%, 0%) scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, 0%) scale(1);
+        opacity: 1;
+    }
+  }
 
 @media only screen and (max-width: 600px) {
     .left img:first-child {
@@ -64,15 +78,10 @@ button {
     border: none;
     transition: all 0.5s ease-in-out;
     cursor: pointer;
-    margin-bottom: 20px;
-    /* margin-top: -10000px; */
-    top: -200px;
     color: #d08e99; 
     font-size: 45px;
     font-family: 'Dancing Script', cursive; 
-
   }
-
 
 .star-1,
 .star-2,
@@ -155,10 +164,9 @@ button {
   }
 
   button:hover {
-    transform: scale(1.1); /* Added rotation */
+    transform: scale(1.1); 
     text-shadow: 0 0 10px #ffffff, 0 0 20px #ffd0eb; 
     color: #f0aab6; 
-
 }
 
   button:hover .star-1 {
@@ -242,19 +250,51 @@ button:hover .star-6 {
     margin-bottom: 10px; /* Adjust the margin as needed */
     margin-top: -100px; /* Adjust the margin as needed */
     transform: translate(0%, -40%);
-
+    animation: fadeInPop 1s ease-out forwards; /* Use forwards to keep the final state after animation */
+    margin-bottom: 20px;
+    top: -230px;
 }
 
+@keyframes fadeInPop {
+  0% {
+    opacity: 0;
+    transform: translate(0%, -40%);
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(0%, -40%);
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%, -40%);
+    transform: scale(1);
+  }
+}
   
 
 .left p{
   font-family: "Rokkitt", serif;
-  /* font-family: 'Montserrat', sans-serif;  */
-    /* top: -500px; */
     margin-bottom: 0; /* Remove bottom margin */
     margin-top: -220px; /* Adjust the margin as needed */
     transform: translate(0%, -30%);
     color: rgb(56, 56, 56);
+    animation: zoom 1s ease-in-out;
+}
+
+
+@keyframes zoom {
+  0%, 100% {
+      opacity: 0;
+      transform: translate(0%, -30%);
+
+  }
+  100% {
+      opacity: 1;
+      transform: translate(0%, -30%);
+
+  }
 }
 
 
@@ -293,6 +333,22 @@ button:hover .star-6 {
     margin-top: 0vh;
     font-size: 40px;
     font-family: "Rubik Doodle Shadow", system-ui;
+    animation: dropDown 1s ease-out forwards; 
+  }
+
+
+  @keyframes dropDown {
+    0% {
+      opacity: 0;
+      transform: scale(.6);
+      margin-top: -50px;
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+      margin-top: 0;
+
+    }
   }
 
 .title-content h1::before,
@@ -366,6 +422,38 @@ li {
   cursor: pointer;
   position: relative;
   z-index: 1;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply different delays to each tab-link */
+.tab-links:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.tab-links:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.tab-links:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+.tab-links:nth-child(4) {
+  animation-delay: 1.2s;
 }
 
 .tab-links::after {
@@ -438,6 +526,9 @@ li {
   margin-right: 10px; /* Adjust the margin as needed */
   margin-top: 100px;
   margin-left: -10px;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+
 }
 
 .text-content {
@@ -445,7 +536,17 @@ li {
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Align items to the start (top) of the column */
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
 }
+
+
+.text-content, .slogo{
+  animation-delay: 1.35s;
+}
+
+
 
 .box ul li .school {
   font-size: 15px; /* Adjust the size as needed */
@@ -465,6 +566,11 @@ li {
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Align items to the start (top) of the column */
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+  animation-delay: 1.65s; /* Synchronize with other elements */
+
 }
 
 .box ul li .courses {
@@ -506,8 +612,29 @@ li {
   background-color: var(--bg-color);
   border-radius: 10px;
   overflow: hidden;
-  margin-top: 1000px;
+  margin-top: 600px;
+  opacity: 0;
+  animation: zoom2 1s ease-in-out forwards;
+  animation-delay: 1.7s;
 }
+
+
+@keyframes zoom2 {
+  0% {
+      opacity: 0;
+      margin-top: 600px;
+      transform: scale(0.8);
+    }
+  100% {
+      opacity: 1;
+      margin-top: 600px;
+      transform: scale(1);
+    }
+}
+
+
+
+
 
 .resume, .resume_icon, .resume_text {
   transition: all 0.3s;

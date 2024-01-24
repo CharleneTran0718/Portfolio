@@ -36,7 +36,6 @@
         </div>
 
 
-
         <div class="container">
             <div class="form">
               <div class="contact-info">
@@ -79,10 +78,11 @@
                 <span class="circle one"></span>
                 <span class="circle two"></span>
       
-                <form action="contact.html" autocomplete="off">
+                  <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="7c30bbae-e638-4cc8-b08b-a5e0365a888b">
                   <h3 class="title">Send a message</h3>
                   <div class="input-container">
-                    <input type="text" name="name" class="input" />
+                    <input type="text" name="name" class="input" />  
                     <label for="">Name</label>
                     <span>Name</span>
                   </div>
@@ -108,6 +108,6 @@
           </div>
     <script src="contact.js"></script>
     <script src="nav.js"></script>
-    <!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
-</body>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+  </body>
 </html>
