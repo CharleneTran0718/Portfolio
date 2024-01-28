@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bellefair&family=Comfortaa:wght@300..700&family=Cutive+Mono&family=Maven+Pro:wght@400..900&family=Moirai+One&family=Mooli&family=Rokkitt:ital,wght@0,100..900;1,100..900&family=Rubik+Doodle+Shadow&display=swap');
 
+html, body{
+    overflow-x: hidden;
+}
 
 .center-text{
     text-align: center;
     margin-top: 50px;
     font-size: 30px;
     font-family: "Moirai One", system-ui;
-
 }
 
 .Projects-content{
@@ -23,11 +25,15 @@
     border-radius: 28px;
     margin-bottom: 1.4rem;
     object-fit: cover;
-    margin-right: 1rem;
 }
 
+.ri-internet-fill{
+    margin-left: 15px;
+}
+
+
 .row{
-    background: #1b2435;
+    background: #212632;
     backdrop-filter: blur(10px);
     margin-left: -1rem;
     border-radius: 28px;
@@ -45,8 +51,8 @@
     margin-bottom: 0.5rem;
 }
 
-.row h5{
-    font-size: 20px;
+.row h4{
+    font-size: 30px;
     font-weight: 600;
     color: aquamarine;
 }
@@ -57,21 +63,45 @@
     justify-content: center;
     width: 55px;
     height: 55px;
-    font-size: 27px;
+    font-size: 20px;
     border-radius: 50%;
     color: white;
     background: rgba(255, 150, 150, 0);
 }
 
-.row h4{
-    font-size: 24px;
+.row h5{
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 10px;
     line-height: 1.4;
 }
 
+.row-icon{
+    transition: filter 0.35s ease-in-out;
+}
+
 .row:hover{
-    border: 1px solid var(pink);
-    transform: translateY(-5px) scale(1.03);
-    cursor: pointer;
+    transform: translateY(-5px);
+    filter: drop-shadow(0 0 20px rgba(81, 81, 81, 0.712));
+    background: #212632ee;
+    .row-icon{
+        filter: drop-shadow(0 0 5px rgba(245, 245, 245, 0.664));
+    }
+}
+
+
+.ri-github-fill,
+.ri-internet-fill {
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; 
+}
+
+.ri-github-fill:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 15px rgb(134, 23, 174));
+}
+
+
+.ri-internet-fill:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 15px rgb(78, 235, 249));
 }
