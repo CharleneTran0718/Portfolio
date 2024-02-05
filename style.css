@@ -595,10 +595,7 @@ ul a:hover {
     font-family: 'Noto Sans JP', sans-serif;
     text-transform: uppercase;
     line-height: 1.5;
-    /* text-align: center; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    letter-spacing: 20px; /* Adjust the spacing between words */
+    letter-spacing: 20px; 
     margin-left: 90px;
     margin-right: 500px;
     padding-bottom: 10px;

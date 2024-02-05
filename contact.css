@@ -79,31 +79,6 @@ textarea {
   right: 30px;
 }
 
-/* .contact-form:before {
-  content: "";
-  position: absolute;
-  width: 26px;
-  height: 26px;
-  background-color: #1abc9c;
-  transform: rotate(45deg);
-  top: 50px;
-  left: -13px;
-}
- */
-
-
-/* .contact-form:before {
-    content: "";
-    position: absolute;
-    width: 26px;
-    height: 26px;
-    background: url('path/to/your/image.png') no-repeat;
-    background-size: cover; 
-    transform: rotate(45deg);
-    top: 50px;
-    left: -13px;
-  } */
-
 
 form {
   padding: 2.3rem 2.2rem;
@@ -289,27 +264,20 @@ textarea.input {
     margin-top: 20%;
   }
   
-  .github-icon img {
+.github-icon img {
     width: 26px; 
     height: auto; 
     margin-top: 12%;
   }
   
-  .instagram-icon img {
-    width: 23px; 
-    height: auto; 
-    margin-top: 16%;
-  }
-  
-  .social-icons a {
+.social-icons a {
     margin-right: 0.5rem;
     transition: 0.3s;
   }
   
-  .social-icons a:hover {
+.social-icons a:hover {
     transform: scale(1.1);
   }
-  
 
 .social-icons a {
   width: 35px;
@@ -339,15 +307,6 @@ textarea.input {
   opacity: 0.3;
 }
 
-
-/* .square {
-  position: absolute;
-  height: 400px;
-  top: 50%;
-  left: 50%;
-  transform: translate(181%, 11%);
-  opacity: 0.2;
-} */
 
 @media (max-width: 850px) {
   .form {
