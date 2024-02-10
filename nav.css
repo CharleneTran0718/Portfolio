@@ -19,20 +19,12 @@ body {
 
 
 .site-content .navbar{
-    /* position: relative; */
-    /* justify-content: space-between;
-    align-items: center; */
     z-index: -2; 
     background-color: rgba(227, 227, 227, 0.355);
     top: 0;
     left: 0;
     right: 0;
-    /* text-decoration: none; */
 }
-
-/* .site-content {
-    height: 60px; 
-} */
 
 .site-content nav .logo {
     margin-left: 30px; /* Adjust the margin to move the logo more to the right */
