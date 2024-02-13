@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlene's Portfolio</title>
+    <link rel="icon" href="images/logolight.png" type="image/png" sizes="64x64">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <div class="site-content">
+        <div class="navbar">
+            <nav>
+                <div class="logo">
+                    <img src="images/logolight.png">
+                </div>
+                <div class="links">
+                    <a href="home.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <section class="projects" id="projects">
+            <div class="center-text">
+                <h2>My <span>Projects</span></h2>
+            </div>
+
+            <div class="Projects-content">
+
+                <div class="row">
+                    <img src="images/j4j.png">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h4>Job for Job</h4>
+                        </div>
+                        <div class="row-icon">
+                            <a href="https://github.com/CharleneTran0718/Job4Job" target="_blank">
+                            <i class="ri-github-fill">
+                                <img src="images/git.png">
+                            </i>
+                            </a>
+                        </div>
+                    </div>
+                    <h5>A costless job exchange platform that enables convenient exchange of professional skills</h5>
+                </div>
+
+                <div class="row">
+                    <img src="images/quote.png">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h4>Quote Generator</h4>
+                        </div>
+                        <div class="row-icon">
+                            <a href="https://github.com/CharleneTran0718/QuoteGenerator" target="_blank">
+                            <i class="ri-github-fill">
+                                <img src="images/git.png">
+                            </i>
+                            </a>
+                            <a href="https://quotesfordays.vercel.app/" target="_blank">
+                            <i class="ri-internet-fill">
+                                <img src="images/internet.png">
+                            </i>
+                            </a>
+                        </div>
+                    </div>
+                    <h5>Randomized daily quotes fetched from Quotable API, allowing users to share on Twitter</h5>
+                </div>
+
+                <!-- <div class="row">
+                    <img src="images/img33.jpg">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h4>Website Design</h4>
+                        </div>
+                        <div class="row-icon">
+                            <i class="ri-github-fill">
+                                <img src="images/git.png">
+                            </i>
+                            <i class="ri-internet-fill">
+                                <img src="images/internet.png">
+                            </i>
+                        </div>
+                    </div>
+                    <h5>Website Development For Dark X</h5>
+                </div> -->
+
+
+            </div>
+        </section>
+    </div>
+    <script src="projects.js"></script>
+    <script src="nav.js"></script>
+</body>
+</html>
