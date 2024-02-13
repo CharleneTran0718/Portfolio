@@ -4,6 +4,10 @@ html, body{
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .center-text{
     text-align: center;
     margin-top: 50px;
@@ -104,4 +108,25 @@ html, body{
 .ri-internet-fill:hover {
     transform: scale(1.05);
     filter: drop-shadow(0 0 15px rgb(78, 235, 249));
+}
+
+/* Media Queries for smaller screen sizes */
+@media screen and (max-width: 768px) {
+    .center-text {
+        font-size: 20px;
+    }
+
+    .row h4 {
+        font-size: 20px;
+    }
+
+    .row i {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .row h5 {
+        font-size: 16px;
+    }
 }

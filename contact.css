@@ -13,6 +13,10 @@ textarea {
 
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .container {
   position: relative;
   width: 100%;
