@@ -182,7 +182,7 @@
                                     <li>
                                       <div class="course-content">
                                         <span class="courses">Relavent Coursework</span><br/>
-                                        <span class="clist"> Web Development Framework <br> Software Management and Testing <br> Machine Learning <br> Database Structures <br> Algorithms <br> Software Engineering <br> Database Fundamentals <br> Object-Oriented Application Development <br> Operating Systems </span>
+                                        <span class="clist"> Web Development Framework <br> Software Management and Testing <br> Cybersecurity <br> Machine Learning & AI <br> Database Structures <br> Algorithms <br> Software Engineering <br> Database Fundamentals <br> Object-Oriented Application Development <br> Operating Systems </span>
                                       </div>
                                     </li>
                                     <a href="images/CharleneTranResume.pdf" download="CharleneTranResume.pdf">
@@ -221,18 +221,36 @@
                                   </a>
                                   </ul>
                                 </div>
-
-                              <div class="box" id="experience">
-                                <ul>
-                                  <li>
-                                    <img src="images/dh.svg" alt="School Image" class="xslogo"/>
-                                    <div class="experience-content">
-                                      <span class="hack">DubHacks - Washington University Hackathon</span><br/>
-                                      <span class="date">October 2023</span>
-                                    </div>
-                                  </li>
-                                </ul>
-                              </div>
+                                <div class="box" id="experience">
+                                  <ul>
+                                    <li>
+                                      <img src="images/longbeachlogo.png" alt="School Image" class="xslogo"/>
+                                      <div class="experience-content">
+                                        <span class="hack">Informational Security Student Assistant</span><br/>
+                                        <span class="date">June 2024 - Current</span>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                  <ul>
+                                    <li>
+                                      <img src="images/La_Hacks_2022.svg" alt="School Image" class="xslogo"/>
+                                      <div class="experience-content">
+                                        <span class="hack">LA Hacks - University of California, Los Angeles Hackathon 🥇</span><br/>
+                                        <span class="date">April 2024</span>
+                                        <div class="confetti-overlay"></div> <!-- Invisible overlay for hover detection -->
+                                      </div>
+                                    </li>
+                                  </ul>
+                                  <ul>
+                                    <li>
+                                      <img src="images/dh.svg" alt="School Image" class="xslogo"/>
+                                      <div class="experience-content">
+                                        <span class="hack">DubHacks - Washington University Hackathon</span><br/>
+                                        <span class="date">October 2023</span>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
 
                               <div class="box" id="frontend">
                                 <div class="skills">
@@ -284,5 +302,22 @@
     </div>
     <script src="about.js"></script>
     <script src="nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const confettiOverlay = document.querySelector('.confetti-overlay');
+
+      confettiOverlay.addEventListener('mouseenter', function() {
+        confetti({
+          particleCount: 100,
+          spread: 70,
+          origin: { y: 0.6 }
+        });
+      });
+    });
+
+    </script>
+
 </body>
 </html>

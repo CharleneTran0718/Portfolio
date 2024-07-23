@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="500" height="500" viewBox="0 0 500 500" xml:space="preserve">
+<desc>Created with Fabric.js 4.6.0</desc>
+<defs>
+</defs>
+<g transform="matrix(1.42 0 0 1.42 249.66 249.3)" id="GIGEyS0tBHmfwNmtRUyif"  >
+<linearGradient id="SVGID_8" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 0 0)"  x1="312.395" y1="207.863" x2="86.8339" y2="313.044">
+<stop offset="0%" style="stop-color:rgb(253,205,80);stop-opacity: 1"/>
+<stop offset="50%" style="stop-color:rgb(243,117,136);stop-opacity: 1"/>
+<stop offset="100%" style="stop-color:rgb(191,109,157);stop-opacity: 1"/>
+</linearGradient>
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: url(#SVGID_8); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-175.07, -207.82)" d="M 9.70117 147.632 L 235.263 42.4508 L 340.444 268.012 L 114.882 373.193 L 9.70117 147.632 Z" stroke-linecap="round" />
+</g>
+<g transform="matrix(1.42 0 0 1.42 250 250)" id="j1lRva08Owtk2kz73YOzJ"  >
+<linearGradient id="SVGID_9" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 0 0)"  x1="101.546" y1="94.7512" x2="296.081" y2="257.985">
+<stop offset="0%" style="stop-color:rgb(247,210,85);stop-opacity: 1"/>
+<stop offset="100%" style="stop-color:rgb(219,114,44);stop-opacity: 1"/>
+</linearGradient>
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: url(#SVGID_9); fill-rule: evenodd; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-175.31, -208.31)" d="M 160.765 42.0143 L 9.0142 222.864 L 189.864 374.615 L 341.615 193.765 L 160.765 42.0143 Z M 0 223.653 L 190.653 383.629 L 350.629 192.977 L 159.977 33.0001 L 0 223.653 Z" stroke-linecap="round" />
+</g>
+<g transform="matrix(1.42 0 0 1.42 184.04 231.78)" id="ES5LUlSX7IHA34uYNMROz"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-128.92, -195.5)" d="M 54.6704 280.487 C 54.6704 337.72 54.6704 337.72 110.13 337.72 L 143.385 337.72 L 200.251 337.72 C 201.859 337.72 203.165 336.401 203.165 334.879 L 203.165 327.775 L 203.165 282.517 L 203.165 252.074 C 203.165 247.71 203.165 247.71 199.849 246.29 L 150.619 223.255 C 146.5 221.428 146.5 221.428 146.5 225.893 L 146.5 268.817 C 146.5 280.487 146.5 280.487 129.621 280.487 C 111.637 280.487 111.737 280.487 111.737 268.817 L 111.737 137.101 L 111.737 81.7964 C 111.737 75.3019 80.6921 53.2815 63.3108 53.2815 C 54.6704 53.2815 54.6704 61.704 54.6704 63.0232 L 54.6704 280.487 Z" stroke-linecap="round" />
+</g>
+<g transform="matrix(1.42 0 0 1.42 314.97 274.36)" id="pXQgGbO-haJdt0ZvB9I0B"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-221, -225.44)" d="M 295.396 355.58 L 295.396 155.874 C 295.396 106.252 295.496 88.0879 220.948 88.0879 C 146.6 88.0879 146.6 103.208 146.6 155.874 L 146.6 180.634 C 146.6 182.765 147.303 182.765 148.308 183.273 L 199.146 208.033 C 203.365 210.063 203.365 210.063 203.265 205.395 L 203.265 154.859 C 203.265 147.249 203.265 145.524 220.546 145.524 C 238.028 145.524 238.228 147.249 238.228 154.656 L 238.228 336.401 C 238.228 342.489 238.228 342.489 239.936 344.519 C 254.404 355.478 265.858 362.785 286.655 362.785 C 295.396 362.886 295.396 355.58 295.396 355.58 Z" stroke-linecap="round" />
+</g>
+</svg>

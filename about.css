@@ -607,21 +607,52 @@ li {
 
 }
 
-.experience-content { /* same as ex speed */
+
+
+
+
+.box ul {
+  margin-bottom: 50px; /* Adjust this value to control the space between each ul */
+}
+/*
+.box ul {
+  display: flex; 
+  align-items: center; 
+  margin-bottom: 50px; 
+}*/
+
+
+
+
+
+.box ul:last-child {
+  margin-bottom: 0; /* Ensure no extra margin after the last ul */
+}
+
+.experience-content {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align items to the start (top) of the column */
+  align-items: flex-start;
   transform: translateY(20px);
   animation: fadeInUp 0.8s ease-out forwards;
   opacity: 0;
 }
 
-
-.experience-content, .s1logo{
+.experience-content, .s1logo {
   animation-delay: 1s;
 }
 
+.confetti-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 200; /* Ensure the overlay is above the text */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  background: transparent; /* Make the overlay invisible */
+}
 
 
 .box ul li .school2 {
