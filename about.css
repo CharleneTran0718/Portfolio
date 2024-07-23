@@ -1046,11 +1046,10 @@ li {
     filter: brightness(1.2) drop-shadow(0 0 10px #ff66a3);
   }
   100% {
-    width: 10%;
+    width: 68%;
     filter: brightness(1) drop-shadow(0 0 3px #ff66a3);
   }
 }
-
 
 
 /* backend */
