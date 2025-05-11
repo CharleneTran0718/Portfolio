@@ -14,7 +14,7 @@ html, body{
     width: 100vw;
     height: 100vh;
     font-family: "Neue Montreal";
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 ::-webkit-scrollbar {
@@ -473,10 +473,10 @@ ul a:hover {
     justify-content: center;
     z-index: -4;
     border-radius: 10px; 
-    margin: 27px 35px; /* Shorter left and right margins */
+    margin: 2em;
     background-color: #fff;
     box-shadow: 14px 14px 18px rgba(0, 0, 0, 0.1); /* Add box-shadow for the shadow effect, only on bottom and right sides */
-
+    padding-bottom: 18%;
 
 
     &::before {
@@ -487,16 +487,8 @@ ul a:hover {
         transform: translate(100%, -50%) rotate(90deg);
         width: 8vw; 
         height: 2vw; 
-        /* background: conic-gradient(
-            transparent 0deg 180deg,  
-            #ff718b 180deg 360deg     
-        ); */
-        margin-right: 60px;
+        margin-right: 4vw;
         background: url('images/ctLight.png') center/cover;
-        /* background-color: #ff718b;
-        animation: sunGlow 5s linear infinite;
-         */
-        /* border-radius: 50%;  */
         z-index: -3; 
     }
 
@@ -559,17 +551,12 @@ ul a:hover {
     flex: 1;
     position: absolute;
     font-size: 3vw;
-    /* font-weight: bold;  */
     color: #99243f; 
     left: 90px;
     font-family: 'Noto Sans JP', sans-serif;
     text-transform: uppercase;
     line-height: 1.5;
-    /* text-align: center; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    letter-spacing: 30px; /* Adjust the spacing between words */
-    /* margin-left: 50px;  */
+    letter-spacing: 30px; 
     margin-right: 200px;
     padding-bottom: 15px;
     top: 80px;
@@ -620,18 +607,47 @@ ul a:hover {
   }
 
 
-  @media (max-width: 600px) {
-    
-    .header a, h1{
-        writing-mode: vertical-lr; /* Vertical writing mode */
-        text-orientation: upright; /* Upright text orientation */
-        white-space: nowrap; /* Prevent line breaks */
-        margin-left: 0; /* Adjust as needed */
-        margin-right: 0; /* Adjust as needed */
-        padding-bottom: 0; /* Adjust as needed */
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-bottom: 100%;
+    }
+
+    .header a{
+        font-size: 15px; /* make text smaller */
+    }
+    .header h1 {
+        text-orientation: initial;
+        white-space: normal;
+        padding: 0;
+        font-size: 25px; /* make text smaller */
+        align-self: flex-start;
+    }
+
+    /* Reduce letter-spacing for smaller screens */
+    .header h1 {
+        letter-spacing: 10px; /* Adjust the spacing between words for h1 */
+        left: 30px; /* Move the h1 to the left */
+    }
+
+    .header a {
+        letter-spacing: 8px; /* Adjust the spacing between words for <a> */
+        left: 30px; /* Move the <a> to the left */
+        margin-left: 0; /* Reset margin-left to 0 */
+    }
+    .header h1::after {
+        bottom: -10px; /* Move the line lower */
+    }
+
+    /* Make the typing effect text wrap sooner*/
+    .custom-typing .wrap {
+        max-width: 80%;
     }
 }
-
+  
 .line{
     content: '';
     position: absolute;

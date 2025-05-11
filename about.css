@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Cutive+Mono&family=Mooli&family=Rokkitt:ital,wght@0,100..900;1,100..900&family=Rubik+Doodle+Shadow&display=swap');
 
 html, body{
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 ::-webkit-scrollbar {
@@ -995,6 +995,10 @@ li {
   animation: react 1.5s linear forwards;
 }
 
+.reactnative{
+  animation: react 1.5s linear forwards;
+}
+
 @keyframes html {
   0% {
     width: 0%;
@@ -1032,7 +1036,7 @@ li {
     filter: brightness(1.2) drop-shadow(0 0 10px #ff66a3);
   }
   100% {
-    width: 64%;
+    width: 70%;
     filter: brightness(1) drop-shadow(0 0 3px #ff66a3);
   }
 }
@@ -1046,7 +1050,21 @@ li {
     filter: brightness(1.2) drop-shadow(0 0 10px #ff66a3);
   }
   100% {
-    width: 68%;
+    width: 78%;
+    filter: brightness(1) drop-shadow(0 0 3px #ff66a3);
+  }
+}
+
+@keyframes reactnative {
+  0% {
+    width: 0%;
+    filter: brightness(1) drop-shadow(0 0 5px #ff66a3);
+  }
+  50% {
+    filter: brightness(1.2) drop-shadow(0 0 10px #ff66a3);
+  }
+  100% {
+    width: 73%;
     filter: brightness(1) drop-shadow(0 0 3px #ff66a3);
   }
 }
@@ -1063,7 +1081,7 @@ li {
   animation: java 1.5s linear forwards;
 }
 
-.cpp{
+.cs{
   animation: cpp 1.5s linear forwards;
 }
 
@@ -1098,7 +1116,7 @@ li {
     filter: brightness(1.2) drop-shadow(0 0 10px #ff66a3);
   }
   100% {
-    width: 62%;
+    width: 82%;
     filter: brightness(1) drop-shadow(0 0 3px #ff66a3);
   }
 }
@@ -1112,7 +1130,7 @@ li {
     filter: brightness(1.2) drop-shadow(0 0 10px #ff66a3);
   }
   100% {
-    width: 86%;
+    width: 78%;
     filter: brightness(1) drop-shadow(0 0 3px #ff66a3);
   }
 }
@@ -1126,7 +1144,7 @@ li {
     filter: brightness(1.2) drop-shadow(0 0 10px #ff66a3);
   }
   100% {
-    width: 74%;
+    width: 89%;
     filter: brightness(1) drop-shadow(0 0 3px #ff66a3);
   }
 }
@@ -1140,7 +1158,66 @@ li {
     filter: brightness(1.2) drop-shadow(0 0 10px #ff66a3);
   }
   100% {
-    width: 83%;
+    width: 80%;
     filter: brightness(1) drop-shadow(0 0 3px #ff66a3);
+  }
+}
+
+@media (max-width: 768px) {
+  .skills h2 {
+    font-size: 14px;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .progress-bar {
+    width: 90%;           /* Responsive width */
+    margin: 0 auto;       /* Center the bar */
+    height: 8px;          /* Slightly smaller height */
+  }
+
+  .progress-bar div {
+    height: 8px;          /* Match the bar height */
+  }
+
+  .progress-bar div span {
+    height: 30px;
+    width: 30px;
+    font-size: 10px;
+    margin-top: -11px;
+    margin-right: -15px;
+  }
+
+  .progress-bar div span::before {
+    height: 90px;
+    width: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills h2 {
+    font-size: 14px; /* Slightly larger for readability */
+  }
+
+  .progress-bar {
+    width: 85%;       /* Use a percentage for better responsiveness */
+    height: 8px;      /* Slightly reduced height */
+  }
+
+  .progress-bar div {
+    height: 8px;
+  }
+
+  .progress-bar div span {
+    height: 28px;
+    width: 28px;
+    font-size: 10px;
+    margin-top: -10px;
+    margin-right: -14px;
+  }
+
+  .progress-bar div span::before {
+    height: 80px;
+    width: 80px;
   }
 }
