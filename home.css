@@ -18,7 +18,7 @@ html, body{
     width: 100vw;
     height: 100vh;
     font-family: "Neue Montreal";
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 body {
