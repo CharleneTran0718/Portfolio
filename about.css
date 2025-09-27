@@ -460,6 +460,11 @@ li {
   animation-delay: 0.9s;
 }
 
+.tab-links:nth-child(5) {
+  animation-delay: 1.1s;
+}
+
+
 .tab-links::after {
   content: "";
   width: 0;
@@ -640,6 +645,20 @@ li {
 }
 
 .experience-content, .s1logo {
+  animation-delay: 1s;
+}
+
+.hackathon-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.hackathon-content, .s1logo {
   animation-delay: 1s;
 }
 
