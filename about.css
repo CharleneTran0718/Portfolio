@@ -498,6 +498,29 @@ li {
 
 .box.active-tab {
   display: block;
+  animation: slideInBox 0.6s ease-out forwards;
+}
+
+.box.animate-box {
+  opacity: 0;
+  animation: slideInBox 0.6s ease-out forwards;
+  animation-delay: var(--delay);
+}
+
+@keyframes slideInBox {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.experience-item {
+  opacity: 0;
+  animation: slideInBox 0.5s ease-out forwards;
 }
 
 .box {
@@ -1014,10 +1037,6 @@ li {
   animation: react 1.5s linear forwards;
 }
 
-.reactnative{
-  animation: react 1.5s linear forwards;
-}
-
 @keyframes html {
   0% {
     width: 0%;
@@ -1096,20 +1115,20 @@ li {
   animation: py 1.5s linear forwards;
 }
 
-.java{
-  animation: java 1.5s linear forwards;
-}
-
-.cs{
-  animation: cpp 1.5s linear forwards;
+.java-cs{
+  animation: java-cs 1.5s linear forwards;
 }
 
 .sql{
   animation: sql 1.5s linear forwards;
 }
 
-.mdb{
-  animation: mdb 1.5s linear forwards;
+.ts{
+  animation: ts 1.5s linear forwards;
+}
+
+.node{
+  animation: node 1.5s linear forwards;
 }
 
 @keyframes py {
@@ -1126,7 +1145,7 @@ li {
   }
 }
 
-@keyframes java {
+@keyframes java-cs {
   0% {
     width: 0%;
     filter: brightness(1) drop-shadow(0 0 5px #ff66a3);
@@ -1135,21 +1154,7 @@ li {
     filter: brightness(1.2) drop-shadow(0 0 10px #ff66a3);
   }
   100% {
-    width: 82%;
-    filter: brightness(1) drop-shadow(0 0 3px #ff66a3);
-  }
-}
-
-@keyframes cpp {
-  0% {
-    width: 0%;
-    filter: brightness(1) drop-shadow(0 0 5px #ff66a3);
-  }
-  50% {
-    filter: brightness(1.2) drop-shadow(0 0 10px #ff66a3);
-  }
-  100% {
-    width: 78%;
+    width: 80%;
     filter: brightness(1) drop-shadow(0 0 3px #ff66a3);
   }
 }
@@ -1168,7 +1173,7 @@ li {
   }
 }
 
-@keyframes mdb {
+@keyframes ts {
   0% {
     width: 0%;
     filter: brightness(1) drop-shadow(0 0 5px #ff66a3);
@@ -1177,7 +1182,21 @@ li {
     filter: brightness(1.2) drop-shadow(0 0 10px #ff66a3);
   }
   100% {
-    width: 80%;
+    width: 85%;
+    filter: brightness(1) drop-shadow(0 0 3px #ff66a3);
+  }
+}
+
+@keyframes node {
+  0% {
+    width: 0%;
+    filter: brightness(1) drop-shadow(0 0 5px #ff66a3);
+  }
+  50% {
+    filter: brightness(1.2) drop-shadow(0 0 10px #ff66a3);
+  }
+  100% {
+    width: 72%;
     filter: brightness(1) drop-shadow(0 0 3px #ff66a3);
   }
 }

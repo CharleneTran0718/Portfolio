@@ -110,6 +110,12 @@ nav > div {
     transition: transform 0.3s ease; /* Add a smooth transition effect */
 }
 
+.navbar .links a.active {
+    color: #000;
+    border-bottom: 3px solid #ff4765;
+    padding-bottom: 5px;
+}
+
 
 
 
